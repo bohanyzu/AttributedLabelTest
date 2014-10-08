@@ -21,15 +21,12 @@
     [attrLabel setFont:[UIFont boldSystemFontOfSize:17] fromIndex:0 length:duesStr.length];
     [attrLabel setColor:[UIColor redColor] fromIndex:0 length:6];
     [attrLabel setColor:[UIColor blueColor] fromIndex:7 length:2];
-//    [attrLabel setColor:[UIColor redColor] fromIndex:0 length:duesStr.length-2];
-//    [attrLabel setColor:[UIColor blueColor] fromIndex:duesStr.length-2 length:2];
     [self.view addSubview:attrLabel];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self changeText];
-    //[attrLabel drawRect:CGRectZero];
 }
 
 - (void)changeText
